@@ -88,27 +88,27 @@ chess_data = pd.read_csv("D:/UAS-APD/chess_games.csv")
 # ============================================================
 # VISUALISASI DATA KEEMPAT (SCATTER PLOT JUMLAH LANGKAH VS STATUS KEMENANGAN)
 
-chess_data['winner'] = chess_data['winner'].replace({
-    'White': 'Putih Menang',
-    'Black': 'Hitam Menang',
-    'Draw': 'Seri'
-})
+# chess_data['winner'] = chess_data['winner'].replace({
+#     'White': 'Putih Menang',
+#     'Black': 'Hitam Menang',
+#     'Draw': 'Seri'
+# })
 
-sns.scatterplot(
-    x='turns',
-    y='victory_status',
-    hue='winner',
-    data=chess_data,
-    palette={
-        'Putih Menang': 'blue',
-        'Hitam Menang': 'red',
-        'Seri': 'green'
-    }
-)
-plt.title('Hubungan Jumlah Langkah dan Status Kemenangan')
-plt.xlabel('Jumlah Langkah (turns)')
-plt.ylabel('Status Kemenangan')
-plt.show()
+# sns.scatterplot(
+#     x='turns',
+#     y='victory_status',
+#     hue='winner',
+#     data=chess_data,
+#     palette={
+#         'Putih Menang': 'blue',
+#         'Hitam Menang': 'red',
+#         'Seri': 'green'
+#     }
+# )
+# plt.title('Hubungan Jumlah Langkah dan Status Kemenangan')
+# plt.xlabel('Jumlah Langkah (turns)')
+# plt.ylabel('Status Kemenangan')
+# plt.show()
 
 
 
